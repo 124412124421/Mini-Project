@@ -1,0 +1,217 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Community Donation Platform - Connect donors with people and organizations in need.">
+    <title>Community Donation Platform</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">Community Donation</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="campaigns.html">Campaigns</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Help Someone Today</h1>
+        <p>Connect with genuine donation campaigns and make a difference in your community.</p>
+        <div class="hero-buttons">
+            <a href="campaigns.html" class="btn">Find Campaigns</a>
+            <a href="register.html" class="btn secondary-btn">Get Started</a>
+        </div>
+    </div>
+</section>
+
+<section class="search-section">
+    <h2>Find a Donation Campaign</h2>
+    <p>Search for campaigns that need your support.</p>
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search donation campaigns...">
+        <button onclick="searchCampaigns()">Search</button>
+    </div>
+</section>
+
+<section class="campaign-section">
+    <h2>Donation Categories</h2>
+    <p class="section-description">Choose a category and support people who need help.</p>
+    <div class="categories">
+        <div class="category">
+            <div class="category-icon">🍱</div>
+            <h3>Food</h3>
+            <p>Help provide food to people and families who are in need.</p>
+            <a href="campaigns.html?category=Food">View Campaigns</a>
+        </div>
+        <div class="category">
+            <div class="category-icon">👕</div>
+            <h3>Clothes</h3>
+            <p>Donate clothes and essential items to families who need them.</p>
+            <a href="campaigns.html?category=Clothes">View Campaigns</a>
+        </div>
+        <div class="category">
+            <div class="category-icon">📚</div>
+            <h3>Books</h3>
+            <p>Support students by donating books and educational materials.</p>
+            <a href="campaigns.html?category=Books">View Campaigns</a>
+        </div>
+        <div class="category">
+            <div class="category-icon">💰</div>
+            <h3>Money</h3>
+            <p>Support verified donation campaigns through financial contributions.</p>
+            <a href="campaigns.html?category=Money">View Campaigns</a>
+        </div>
+        <div class="category">
+            <div class="category-icon">🧺</div>
+            <h3>Essentials</h3>
+            <p>Help people by donating important daily-use essential items.</p>
+            <a href="campaigns.html?category=Essentials">View Campaigns</a>
+        </div>
+        <div class="category">
+            <div class="category-icon">❤️</div>
+            <h3>Other</h3>
+            <p>Support other genuine causes and community donation requests.</p>
+            <a href="campaigns.html">View Campaigns</a>
+        </div>
+    </div>
+</section>
+
+<section class="featured-section">
+    <h2>Featured Donation Campaigns</h2>
+    <p class="section-description">Explore campaigns where your contribution can make a meaningful difference.</p>
+    <div class="campaigns">
+        <div class="campaign-card">
+            <div class="campaign-image">🍱</div>
+            <div class="campaign-content">
+                <span class="campaign-category">Food</span>
+                <h3>Food for Families</h3>
+                <p>Help provide food packages to families facing financial difficulties.</p>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%;"></div>
+                    </div>
+                </div>
+                <div class="campaign-stats">
+                    <span>₹32,500 raised</span>
+                    <span>Goal: ₹50,000</span>
+                </div>
+                <a href="campaign-details.html" class="campaign-btn">View Campaign</a>
+            </div>
+        </div>
+        <div class="campaign-card">
+            <div class="campaign-image">📚</div>
+            <div class="campaign-content">
+                <span class="campaign-category">Books</span>
+                <h3>Books for Students</h3>
+                <p>Help students by providing books and educational materials.</p>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 64%;"></div>
+                    </div>
+                </div>
+                <div class="campaign-stats">
+                    <span>320 Books</span>
+                    <span>Goal: 500</span>
+                </div>
+                <a href="campaign-details.html" class="campaign-btn">View Campaign</a>
+            </div>
+        </div>
+        <div class="campaign-card">
+            <div class="campaign-image">👕</div>
+            <div class="campaign-content">
+                <span class="campaign-category">Clothes</span>
+                <h3>Clothes for Families</h3>
+                <p>Donate clean clothes to families who need essential clothing.</p>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div class="campaign-stats">
+                    <span>100 Items</span>
+                    <span>Goal: 200</span>
+                </div>
+                <a href="campaign-details.html" class="campaign-btn">View Campaign</a>
+            </div>
+        </div>
+    </div>
+    <div class="view-all">
+        <a href="campaigns.html" class="btn">View All Campaigns</a>
+    </div>
+</section>
+
+<section class="how-section">
+    <h2>How It Works</h2>
+    <p class="section-description">Supporting a cause is simple and easy.</p>
+    <div class="steps">
+        <div class="step">
+            <div class="step-number">1</div>
+            <h3>Create an Account</h3>
+            <p>Register as a donor or requester on the platform.</p>
+        </div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <h3>Find a Campaign</h3>
+            <p>Search and filter donation campaigns according to your interests.</p>
+        </div>
+        <div class="step">
+            <div class="step-number">3</div>
+            <h3>Make a Donation</h3>
+            <p>Donate money or pledge useful items to a campaign.</p>
+        </div>
+        <div class="step">
+            <div class="step-number">4</div>
+            <h3>Make a Difference</h3>
+            <p>Your contribution helps people and communities in need.</p>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <h2>Want to Help Your Community?</h2>
+    <p>Join the Community Donation Platform and start making a difference today.</p>
+    <a href="register.html" class="btn">Create an Account</a>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-column">
+            <h3>Community Donation</h3>
+            <p>Connecting donors with people and organizations in need.</p>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="campaigns.html">Campaigns</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </div>
+        <div class="footer-column">
+            <h3>Donation Categories</h3>
+            <a href="campaigns.html?category=Food">Food</a>
+            <a href="campaigns.html?category=Clothes">Clothes</a>
+            <a href="campaigns.html?category=Books">Books</a>
+            <a href="campaigns.html?category=Money">Money</a>
+        </div>
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <p>Email: support@communitydonation.com</p>
+            <p>Community Donation Platform</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Community Donation Platform. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
+```
